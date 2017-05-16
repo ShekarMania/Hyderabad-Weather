@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hyderabad Weather</string>
+    <string name="error_title">Alert</string>
+    <string name="error_message">Please Check Your Internet Connection!</string>
+    <string name="error_ok_button_text">OK</string>
+    <string name="network_unavailable">"Network is Unavailable "</string>
+</resources>
