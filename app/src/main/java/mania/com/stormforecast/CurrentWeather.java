@@ -1,5 +1,7 @@
 package mania.com.stormforecast;
 
+import android.util.Log;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
@@ -98,7 +100,13 @@ public class CurrentWeather {
     }
 
     public int getTemperature() {
-        return (int) Math.round(mTemperature);
+
+        int mTempF = (int) Math.round(mTemperature);
+
+        int mTempC ;
+        mTempC =  (mTempF - 32)*5/9;
+
+        return mTempC;
     }
 
     public void setTemperature(double temperature) {
